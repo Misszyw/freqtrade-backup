@@ -1,0 +1,28 @@
+# 排除敏感文件
+config.json
+*.key
+*.pem
+secrets/
+keys/
+*.log
+
+# 排除大数据
+data/
+*.csv
+*.parquet
+
+# 排除临时文件
+tmp/
+temp/
+.cache/
+__pycache__/
+*.pyc
+
+# 但要包含策略代码
+!strategies/
+strategies/*
+!strategies/*.py
+
+# 包含配置模板
+!.gitignore
+README.md
